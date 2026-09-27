@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Тягач Offroad / Offroad Truck / Օֆրոադ Բեռնատար</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="hud" class="hidden">
+  <span id="speedLabel"></span>: <span id="speedVal">0</span> <span id="kmhLabel"></span><br>
+  <span id="trailerLabel"></span>: <span id="trailerVal">-</span>
+</div>
+
+<div id="topRightBtns" class="hidden">
+  <div class="langMini" id="langMiniTop">
+    <button data-lang="ru" class="langBtn">RU</button>
+    <button data-lang="en" class="langBtn">EN</button>
+    <button data-lang="hy" class="langBtn">HY</button>
+  </div>
+  <button id="swapBtn" class="hudBtn"></button>
+  <button id="restartBtn" class="hudBtn"></button>
+</div>
+
+<div id="overlay">
+  <div id="panel">
+    <div class="langRow" id="langRowMenu">
+      <button data-lang="ru" class="langBtn">RU</button>
+      <button data-lang="en" class="langBtn">EN</button>
+      <button data-lang="hy" class="langBtn">HY</button>
+    </div>
+    <h1 id="panelTitle"></h1>
+    <p id="panelSubtitle"></p>
+    <div class="trailers" id="trailerPicker"></div>
+    <button id="startBtn"></button>
+    <div id="controlsHint"></div>
+  </div>
+</div>
+
+<div id="crashOverlay" class="hidden">
+  <div id="crashPanel">
+    <h1 id="crashTitle"></h1>
+    <p id="crashText"></p>
+    <button id="crashRestart"></button>
+  </div>
+</div>
+
+<!-- Мобильное управление -->
+<div id="mobileControls" class="hidden">
+  <div class="mc-left">
+    <button id="btnLeft" class="mc-btn">◀</button>
+    <button id="btnRight" class="mc-btn">▶</button>
+  </div>
+  <div class="mc-right">
+    <button id="btnBrake" class="mc-btn">⛔</button>
+    <button id="btnGas" class="mc-btn">▲</button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
